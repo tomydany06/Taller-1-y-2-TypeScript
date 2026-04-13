@@ -8,3 +8,4 @@ export declare class Serie {
     imageUrl: string;
     constructor(id: number, name: string, channel: string, seasons: number, description: string, serieUrl: string, imageUrl: string);
 }
+//# sourceMappingURL=serie.d.ts.map

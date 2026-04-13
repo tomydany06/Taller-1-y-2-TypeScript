@@ -2,6 +2,7 @@ import { Serie } from './serie.js';
 
 import { dataSeries } from './data.js';
 
+// 1. Referencia a los elementos del DOM
 let seriesTbody: HTMLElement = document.getElementById('series')!;
 const seasonsAvgElm: HTMLElement = document.getElementById('seasons-average')!;
 const serieDetailElm: HTMLElement = document.getElementById('serie-detail')!;
@@ -10,6 +11,7 @@ renderSeriesInTable(dataSeries);
 
 seasonsAvgElm.innerHTML = `${getSeasonsAverage(dataSeries)}`;
 
+// 2. Función para renderizar las series en la tabla
 function renderSeriesInTable(series: Serie[]): void {
   console.log('Desplegando series');
   series.forEach((serie) => {
@@ -24,6 +26,7 @@ function renderSeriesInTable(series: Serie[]): void {
   });
 }
 
+// 3. Función para mostrar el detalle de una serie en el Card
 function showSerieDetail(serie: Serie): void {
   serieDetailElm.innerHTML = `
     <div class="card">
@@ -36,6 +39,7 @@ function showSerieDetail(serie: Serie): void {
     </div>`;
 }
 
+// 4. Función para calcular el promedio de temporadas
 function getSeasonsAverage(series: Serie[]): number {
   let totalSeasons: number = 0;
   series.forEach((serie) => totalSeasons = totalSeasons + serie.seasons);

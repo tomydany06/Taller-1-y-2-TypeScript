@@ -4,11 +4,11 @@ export class Serie {
     channel: string;
     seasons: number;
     description: string;
-    serieUrl: string;    
+    serieUrl: string;
     imageUrl: string;
   
     constructor(id: number, name: string, channel: string, seasons: number,
-                description: string, imageUrl: string, serieUrl: string) {
+                description: string, serieUrl: string, imageUrl: string) {
       this.id = id;
       this.name = name;
       this.channel = channel;

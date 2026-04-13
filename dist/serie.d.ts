@@ -4,7 +4,7 @@ export declare class Serie {
     channel: string;
     seasons: number;
     description: string;
-    imageUrl: string;
     serieUrl: string;
-    constructor(id: number, name: string, channel: string, seasons: number, description: string, imageUrl: string, serieUrl: string);
+    imageUrl: string;
+    constructor(id: number, name: string, channel: string, seasons: number, description: string, serieUrl: string, imageUrl: string);
 }
